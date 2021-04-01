@@ -2,6 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <PackageProjectUrl>https://github.com/ivarlovlie/IOL.Helpers</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/ivarlovlie/IOL.Helpers/blob/master/LICENSE</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/ivarlovlie/IOL.Helpers</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>dotnet</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
