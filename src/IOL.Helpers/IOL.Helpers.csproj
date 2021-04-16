@@ -2,11 +2,18 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <PackageProjectUrl>https://github.com/ivarlovlie/IOL.Helpers</PackageProjectUrl>
-    <PackageLicenseUrl>https://github.com/ivarlovlie/IOL.Helpers/blob/master/LICENSE</PackageLicenseUrl>
-    <RepositoryUrl>https://github.com/ivarlovlie/IOL.Helpers</RepositoryUrl>
+    <PackageProjectUrl>https://git.sr.ht/~ivar/IOL.Helpers</PackageProjectUrl>
+    <PackageLicenseUrl>https://git.sr.ht/~ivar/IOL.Helpers/tree/master/item/LICENSE</PackageLicenseUrl>
+    <RepositoryUrl>https://git.sr.ht/~ivar/IOL.Helpers</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>dotnet</PackageTags>
+    <PackageVersion>1.0.1</PackageVersion>
+    <Title>IOL.Helpers</Title>
+    <Authors>Ivar Løvlie</Authors>
+    <Description>Common helpers for my dotnet projects.</Description>
+    <Copyright>Ivar Løvlie</Copyright>
+    <PackageReleaseNotes>Rename HttpRequestHelpers.GetAppHost -&gt; HttpRequestHelpers.GetRequestHost
+Add optional parameter to skip X-Forwarded-Host and X-Forwarded-Proto</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
