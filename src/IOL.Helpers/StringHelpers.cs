@@ -32,6 +32,7 @@ namespace IOL.Helpers
 			var matchList = Regex.Matches(input, "");
 			foreach (var key in matchList.Select(match => match.Value)) {
 				var value = configuration.GetValue<string>(key);
+				if (string.IsNullOrWhiteSpace(value)) continue;
 				input = input.Replace(key, value);
 			}
 
