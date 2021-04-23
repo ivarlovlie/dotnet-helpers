@@ -1,6 +1,9 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using Microsoft.Extensions.Configuration;
 
 namespace IOL.Helpers
 {
@@ -18,6 +21,23 @@ namespace IOL.Helpers
 			return !value.IsNullOrWhiteSpace();
 		}
 
+		public static string UnicornFormat(this string input, IDictionary<string, string> values) {
+			if (string.IsNullOrWhiteSpace(input)) return default;
+			return values.Count == 0 ? default : values.Aggregate(input, (current, value1) => current.Replace("{" + value1.Key + "}", value1.Value));
+		}
+
+
+		public static string UnicornFormatWithEnvironment(this string input, IConfiguration configuration) {
+			if (string.IsNullOrWhiteSpace(input)) return default;
+			var matchList = Regex.Matches(input, "");
+			foreach (var key in matchList.Select(match => match.Value)) {
+				var value = configuration.GetValue<string>(key);
+				input = input.Replace(key, value);
+			}
+
+			return input;
+		}
+
 		public static Guid ToGuid(this string value) {
 			return Guid.Parse(value);
 		}
@@ -29,7 +49,7 @@ namespace IOL.Helpers
 		public static string ExtractFileName(this string value) {
 			if (value.IsNullOrWhiteSpace()) return default;
 			var lastIndex = value.LastIndexOf('.');
-			return lastIndex <= 0 ? default : value.Substring(0, lastIndex);
+			return lastIndex <= 0 ? default : value[..lastIndex];
 		}
 
 		public static string ExtractExtension(this string value) {
@@ -40,8 +60,8 @@ namespace IOL.Helpers
 
 		public static string Capitalize(this string input) {
 			return input.IsNullOrWhiteSpace()
-				? input
-				: Regex.Replace(input, @"\b(\w)", m => m.Value.ToUpper(), RegexOptions.None);
+					? input
+					: Regex.Replace(input, @"\b(\w)", m => m.Value.ToUpper(), RegexOptions.None);
 		}
 
 
