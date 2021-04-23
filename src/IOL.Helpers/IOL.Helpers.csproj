@@ -7,13 +7,12 @@
     <RepositoryUrl>https://git.sr.ht/~ivar/IOL.Helpers</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>dotnet</PackageTags>
-    <PackageVersion>1.0.1</PackageVersion>
+    <PackageVersion>1.0.2</PackageVersion>
     <Title>IOL.Helpers</Title>
     <Authors>Ivar Løvlie</Authors>
     <Description>Common helpers for my dotnet projects.</Description>
     <Copyright>Ivar Løvlie</Copyright>
-    <PackageReleaseNotes>Rename HttpRequestHelpers.GetAppHost -&gt; HttpRequestHelpers.GetRequestHost
-Add optional parameter to skip X-Forwarded-Host and X-Forwarded-Proto</PackageReleaseNotes>
+    <PackageReleaseNotes>Add UnicornFormat</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
