@@ -7,7 +7,7 @@
     <RepositoryUrl>https://git.sr.ht/~ivar/IOL.Helpers</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>dotnet</PackageTags>
-    <PackageVersion>1.0.2</PackageVersion>
+    <PackageVersion>1.0.3</PackageVersion>
     <Title>IOL.Helpers</Title>
     <Authors>Ivar Løvlie</Authors>
     <Description>Common helpers for my dotnet projects.</Description>
