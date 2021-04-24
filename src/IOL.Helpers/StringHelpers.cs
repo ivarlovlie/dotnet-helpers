@@ -29,9 +29,9 @@ namespace IOL.Helpers
 
 		public static string UnicornFormatWithEnvironment(this string input, IConfiguration configuration) {
 			if (string.IsNullOrWhiteSpace(input)) return default;
-			var matchList = Regex.Matches(input, "");
+			var matchList = Regex.Matches(input, "{[a-z|_]*}", RegexOptions.IgnoreCase);
 			foreach (var key in matchList.Select(match => match.Value)) {
-				var value = configuration.GetValue<string>(key);
+				var value = configuration.GetValue<string>(key.Substring(1, key.Length - 2));
 				if (string.IsNullOrWhiteSpace(value)) continue;
 				input = input.Replace(key, value);
 			}
