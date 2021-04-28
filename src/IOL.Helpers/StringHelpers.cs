@@ -40,7 +40,7 @@ namespace IOL.Helpers
 		}
 
 		public static Guid ToGuid(this string value) {
-			return Guid.Parse(value);
+			return !Guid.TryParse(value, out var res) ? default : res;
 		}
 
 		public static string Base64Encode(this string text) {
