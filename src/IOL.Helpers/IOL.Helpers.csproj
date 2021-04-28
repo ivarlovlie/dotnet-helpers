@@ -7,12 +7,12 @@
     <RepositoryUrl>https://git.sr.ht/~ivar/IOL.Helpers</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>dotnet</PackageTags>
-    <PackageVersion>1.0.4</PackageVersion>
+    <PackageVersion>1.1.0</PackageVersion>
     <Title>IOL.Helpers</Title>
     <Authors>Ivar Løvlie</Authors>
     <Description>Common helpers for my dotnet projects.</Description>
     <Copyright>Ivar Løvlie</Copyright>
-    <PackageReleaseNotes>Fix UnicornFormatWithEnvironment</PackageReleaseNotes>
+    <PackageReleaseNotes>Make ToGuid safe (not able to throw)</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
