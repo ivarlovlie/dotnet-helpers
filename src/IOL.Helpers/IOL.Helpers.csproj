@@ -7,12 +7,13 @@
     <RepositoryUrl>https://git.sr.ht/~ivar/IOL.Helpers</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>dotnet</PackageTags>
-    <PackageVersion>1.1.0</PackageVersion>
+    <PackageVersion>1.1.1</PackageVersion>
     <Title>IOL.Helpers</Title>
     <Authors>Ivar Løvlie</Authors>
     <Description>Common helpers for my dotnet projects.</Description>
     <Copyright>Ivar Løvlie</Copyright>
-    <PackageReleaseNotes>Make ToGuid safe (not able to throw)</PackageReleaseNotes>
+    <PackageReleaseNotes>Add InMemoryZipArchive
+Add DateTimeHelpers.StartOfWeek</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
