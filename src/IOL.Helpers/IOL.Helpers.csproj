@@ -1,26 +1,27 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
-    <PackageProjectUrl>https://git.sr.ht/~ivar/IOL.Helpers</PackageProjectUrl>
-    <PackageLicenseUrl>https://git.sr.ht/~ivar/IOL.Helpers/tree/master/item/LICENSE</PackageLicenseUrl>
-    <RepositoryUrl>https://git.sr.ht/~ivar/IOL.Helpers</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
-    <PackageTags>dotnet</PackageTags>
-    <PackageVersion>1.1.1</PackageVersion>
-    <Title>IOL.Helpers</Title>
-    <Authors>Ivar Løvlie</Authors>
-    <Description>Common helpers for my dotnet projects.</Description>
-    <Copyright>Ivar Løvlie</Copyright>
-    <PackageReleaseNotes>Add InMemoryZipArchive
-Add DateTimeHelpers.StartOfWeek</PackageReleaseNotes>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <PackageProjectUrl>https://git.sr.ht/~ivar/IOL.Helpers</PackageProjectUrl>
+        <PackageLicenseUrl>https://git.sr.ht/~ivar/IOL.Helpers/tree/master/item/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://git.sr.ht/~ivar/IOL.Helpers</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>dotnet</PackageTags>
+        <PackageVersion>1.1.1</PackageVersion>
+        <Title>IOL.Helpers</Title>
+        <Authors>Ivar Løvlie</Authors>
+        <Description>Common helpers for my dotnet projects.</Description>
+        <Copyright>Ivar Løvlie</Copyright>
+        <PackageReleaseNotes>Add InMemoryZipArchive
+            Add DateTimeHelpers.StartOfWeek
+        </PackageReleaseNotes>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Cryptography.KeyDerivation" Version="5.0.5" />
-    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
-    <PackageReference Include="Microsoft.Extensions.Configuration" Version="5.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="5.0.0" />
-  </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Cryptography.KeyDerivation" Version="6.0.0"/>
+        <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="6.0.0"/>
+    </ItemGroup>
 
 </Project>
