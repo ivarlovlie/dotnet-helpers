@@ -12,7 +12,7 @@
         <Authors>Ivar Løvlie</Authors>
         <Description>Common helpers for my dotnet projects.</Description>
         <Copyright>Ivar Løvlie</Copyright>
-        <PackageReleaseNotes>Add InMemoryZipArchive
+        <PackageReleaseNotes>
             ToGuid throws on invalid Guids.
             Use ToGuidOrDefault for old behaviour.
         </PackageReleaseNotes>
