@@ -155,7 +155,6 @@ public static class CryptographyHelpers
 		return Convert.ToBase64String(hash);
 	}
 
-
 	/// <summary>
 	/// Creates a SHA256 hash of the specified input.
 	/// </summary>

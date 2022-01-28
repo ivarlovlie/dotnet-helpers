@@ -17,6 +17,10 @@ public static class StringHelpers
 		return Slug.Generate(true, input);
 	}
 
+	public static string ToSnakeCase(this string str) {
+		return string.Concat(str.Select((x, i) => i > 0 && char.IsUpper(x) ? "_" + x : x.ToString())).ToLower();
+	}
+
 	public static bool HasValue(this string value) {
 		return !value.IsNullOrWhiteSpace();
 	}
@@ -25,7 +29,6 @@ public static class StringHelpers
 		if (string.IsNullOrWhiteSpace(input)) return default;
 		return values.Count == 0 ? default : values.Aggregate(input, (current, value1) => current.Replace("{" + value1.Key + "}", value1.Value));
 	}
-
 
 	public static string UnicornFormatWithEnvironment(this string input, IConfiguration configuration) {
 		if (string.IsNullOrWhiteSpace(input)) return default;
@@ -40,6 +43,10 @@ public static class StringHelpers
 	}
 
 	public static Guid ToGuid(this string value) {
+		return new Guid(value);
+	}
+
+	public static Guid ToGuidOrDefault(this string value) {
 		return !Guid.TryParse(value, out var res) ? default : res;
 	}
 
