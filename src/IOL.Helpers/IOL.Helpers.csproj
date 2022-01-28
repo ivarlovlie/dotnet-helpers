@@ -7,14 +7,14 @@
         <RepositoryUrl>https://git.sr.ht/~ivar/IOL.Helpers</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <PackageTags>dotnet</PackageTags>
-        <PackageVersion>1.2.0</PackageVersion>
+        <PackageVersion>2.0.0</PackageVersion>
         <Title>IOL.Helpers</Title>
         <Authors>Ivar Løvlie</Authors>
         <Description>Common helpers for my dotnet projects.</Description>
         <Copyright>Ivar Løvlie</Copyright>
         <PackageReleaseNotes>Add InMemoryZipArchive
-            Add ContidionalWhere to QueryableHelpers
-            Update to net6.0
+            ToGuid throws on invalid Guids.
+            Use ToGuidOrDefault for old behaviour.
         </PackageReleaseNotes>
     </PropertyGroup>
 
