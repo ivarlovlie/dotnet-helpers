@@ -18,8 +18,8 @@ public static class Slug
 	/// </summary>
 	/// <param name="value"></param>
 	/// <param name="toLower"></param>
-	/// <returns>Slugified string</returns>
-	public static string Create(string value, bool toLower) {
+	/// <returns>AsSlug string</returns>
+	private static string Create(string value, bool toLower) {
 		if (string.IsNullOrWhiteSpace(value))
 			return value;
 
@@ -102,6 +102,7 @@ public static class Slug
 			'å' => "aa",
 			'æ' => "ae",
 			'Þ' => "th",
+			'@' => "at",
 			_ => null
 	};
 }
