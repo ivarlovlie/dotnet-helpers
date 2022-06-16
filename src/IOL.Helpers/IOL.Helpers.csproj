@@ -6,14 +6,13 @@
         <PackageLicenseUrl>https://git.ivar.systems/dotnet-helpers/tree/LICENSE</PackageLicenseUrl>
         <RepositoryUrl>https://git.ivar.systems/dotnet-helpers</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
-        <PackageVersion>3.0.0</PackageVersion>
+        <PackageVersion>3.1.0</PackageVersion>
         <Title>IOL.Helpers</Title>
         <Authors>Ivar Løvlie</Authors>
         <Description>Common helpers for my dotnet projects.</Description>
         <Copyright>Ivar Løvlie</Copyright>
         <PackageReleaseNotes>
-            ToGuid throws on invalid Guids.
-            Use ToGuidOrDefault for old behaviour.
+            Added IEnumerable.IsNullOrEmpty().
         </PackageReleaseNotes>
     </PropertyGroup>
 
