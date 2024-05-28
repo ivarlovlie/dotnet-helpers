@@ -1,23 +1,23 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net6.0</TargetFramework>
+        <TargetFramework>net8.0</TargetFramework>
         <PackageProjectUrl>https://git.ivar.systems/dotnet-helpers</PackageProjectUrl>
         <PackageLicenseUrl>https://git.ivar.systems/dotnet-helpers/tree/LICENSE</PackageLicenseUrl>
         <RepositoryUrl>https://git.ivar.systems/dotnet-helpers</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
-        <PackageVersion>3.1.0</PackageVersion>
+        <PackageVersion>4.0.0</PackageVersion>
         <Title>IOL.Helpers</Title>
         <Authors>Ivar Løvlie</Authors>
         <Description>Common helpers for my dotnet projects.</Description>
         <Copyright>Ivar Løvlie</Copyright>
         <PackageReleaseNotes>
-            Added IEnumerable.IsNullOrEmpty().
+            Target net8.0.
         </PackageReleaseNotes>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.AspNetCore.Cryptography.KeyDerivation" Version="6.0.6" />
+        <PackageReference Include="Microsoft.AspNetCore.Cryptography.KeyDerivation" Version="8.0.6" />
         <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
     </ItemGroup>
 </Project>
